@@ -1,0 +1,43 @@
+
+RewriteEngine on
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+Options All -Indexes
+RewriteCond %{HTTP_HOST} ^offthewaffle.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.offthewaffle.com$
+RewriteRule ^media$ "http\:\/\/offthewaffle\.com\/In\-The\-Media\.htm" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^offthewaffle\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.offthewaffle\.com$
+RewriteRule ^Liege\-Waffle\.htm$ "http\:\/\/www\.offthewaffle\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^offthewaffle\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.offthewaffle\.com$
+RewriteRule ^Slide\-images\/OTF_shoot\-1\-11\.jpg$ "http\:\/\/www\.offthewaffle\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^offthewaffle\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.offthewaffle\.com$
+RewriteRule ^pdfs\/Shop2Menu_Nov2013\.pdf$ "http\:\/\/www\.offthewaffle\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^offthewaffle\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.offthewaffle\.com$
+RewriteRule ^apple\-touch\-icon\.png$ "http\:\/\/www\.offthewaffle\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^offthewaffle\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.offthewaffle\.com$
+RewriteRule ^images\/register\-guard\.jpg$ "http\:\/\/www\.offthewaffle\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^offthewaffle\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.offthewaffle\.com$
+RewriteRule ^Liege\-Menu\.pdf$ "http\:\/\/www\.offthewaffle\.com\/" [R=301,L]
+
+AuthName offthewaffle
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
