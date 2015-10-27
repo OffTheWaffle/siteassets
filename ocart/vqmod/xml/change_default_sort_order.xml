@@ -1,0 +1,132 @@
+<modification>
+	<id>Change Default Sort Order on Pages Category, Manufacturer, Search, Specials</id>
+	<version>1.0.0</version>
+	<vqmver>2.1.7</vqmver>
+	<author>twilli</author>
+	
+	<file name="catalog/controller/product/category.php">
+	<operation>
+      <search position="replace"><![CDATA[
+        $sort = 'p.sort_order';
+      ]]></search>
+      <add><![CDATA[
+		$sort = 'rating'; //Accepted values are 'rating', 'name', 'p.price', 'p.model'
+      ]]></add>
+    </operation>
+	
+	<operation>
+      <search position="replace"><![CDATA[
+        $order = 'ASC';
+      ]]></search>
+      <add><![CDATA[
+		$order = 'DESC'; //Set to DESC for descending, ASC for ascending
+      ]]></add>
+    </operation>
+  </file>
+
+  <file name="catalog/controller/product/manufacturer.php">
+	<operation>
+      <search position="replace"><![CDATA[
+        $sort = 'p.sort_order';
+      ]]></search>
+      <add><![CDATA[
+		$sort = 'rating'; //Accepted values are 'rating', 'name', 'p.price', 'p.model'
+      ]]></add>
+    </operation>
+	
+	<operation>
+      <search position="replace"><![CDATA[
+        $order = 'ASC';
+      ]]></search>
+      <add><![CDATA[
+		$order = 'DESC'; //Set to DESC for descending, ASC for ascending
+      ]]></add>
+    </operation>
+  </file>
+  
+  <file name="catalog/controller/product/search.php">
+	<operation>
+      <search position="replace"><![CDATA[
+        $sort = 'p.sort_order';
+      ]]></search>
+      <add><![CDATA[
+		$sort = 'rating'; //Accepted values are 'rating', 'name', 'p.price', 'p.model'
+      ]]></add>
+    </operation>
+	
+	<operation>
+      <search position="replace"><![CDATA[
+        $order = 'ASC';
+      ]]></search>
+      <add><![CDATA[
+		$order = 'DESC'; //Set to DESC for descending, ASC for ascending
+      ]]></add>
+    </operation>
+  </file>
+  
+  <file name="catalog/controller/product/special.php">
+	<operation>
+      <search position="replace"><![CDATA[
+        $sort = 'p.sort_order';
+      ]]></search>
+      <add><![CDATA[
+		$sort = 'rating'; //Accepted values are 'rating', 'name', 'p.price', 'p.model'
+      ]]></add>
+    </operation>
+	
+	<operation>
+      <search position="replace"><![CDATA[
+        $order = 'ASC';
+      ]]></search>
+      <add><![CDATA[
+		$order = 'DESC'; //Set to DESC for descending, ASC for ascending
+      ]]></add>
+    </operation>
+  </file>
+  
+  
+  	<file name="catalog/view/theme/*/template/product/category.tpl">
+	<operation>
+      <search position="replace"><![CDATA[
+        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+      ]]></search>
+      <add><![CDATA[
+		<?php if($sorts['value'] != 'p.sort_order-ASC'){ ?><option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option><?php } ?>
+      ]]></add>
+    </operation>
+  </file>
+  
+  	<file name="catalog/view/theme/*/template/product/manufacturer_info.tpl">
+	<operation>
+      <search position="replace"><![CDATA[
+        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+      ]]></search>
+      <add><![CDATA[
+		<?php if($sorts['value'] != 'p.sort_order-ASC'){ ?><option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option><?php } ?>
+      ]]></add>
+    </operation>
+  </file>
+  
+  	<file name="catalog/view/theme/*/template/product/search.tpl">
+	<operation>
+      <search position="replace"><![CDATA[
+        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+      ]]></search>
+      <add><![CDATA[
+		<?php if($sorts['value'] != 'p.sort_order-ASC'){ ?><option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option><?php } ?>
+      ]]></add>
+    </operation>
+  </file>
+  
+  	<file name="catalog/view/theme/*/template/product/special.tpl">
+	<operation>
+      <search position="replace"><![CDATA[
+        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+      ]]></search>
+      <add><![CDATA[
+		<?php if($sorts['value'] != 'p.sort_order-ASC'){ ?><option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option><?php } ?>
+      ]]></add>
+    </operation>
+  </file>
+ 
+</modification>

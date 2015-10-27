@@ -1,0 +1,371 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+  text-align: center;
+ }
+
+#content {
+  margin: 0 auto;
+}
+
+#subFooter a {
+	font-size: 0.7em;
+	text-decoration:none;
+	color: #888888;
+	font-family: Arial;
+	padding: 10px 0;
+}
+
+#subFooter a:hover {
+	font-size: 0.7em;
+	text-decoration:none;
+	color: #AAAAAA;
+}
+
+
+@font-face {
+    font-family: 'agenda-lightregular';
+    src: url('agenda-webfont.eot');
+    src: url('agenda-webfont.eot?#iefix') format('embedded-opentype'),
+         url('agenda-webfont.woff') format('woff'),
+         url('agenda-webfont.ttf') format('truetype'),
+         url('agenda-webfont.svg#agenda-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'flagship_slabbold';
+    src: url('flagship_slab_-_bold-webfont.eot');
+    src: url('flagship_slab_-_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('flagship_slab_-_bold-webfont.woff') format('woff'),
+         url('flagship_slab_-_bold-webfont.ttf') format('truetype'),
+         url('flagship_slab_-_bold-webfont.svg#flagship_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'lobster_1.4regular';
+    src: url('lobster-webfont.eot');
+    src: url('lobster-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lobster-webfont.woff') format('woff'),
+         url('lobster-webfont.ttf') format('truetype'),
+         url('lobster-webfont.svg#lobster_1.4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'akbarplain';
+    src: url('akbar_6-webfont.eot');
+    src: url('akbar_6-webfont.eot?#iefix') format('embedded-opentype'),
+         url('akbar_6-webfont.woff') format('woff'),
+         url('akbar_6-webfont.ttf') format('truetype'),
+         url('akbar_6-webfont.svg#akbarplain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gotham_lightitalic';
+    src: url('gotham-lightitalic-webfont.eot');
+    src: url('gotham-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-lightitalic-webfont.woff') format('woff'),
+         url('gotham-lightitalic-webfont.ttf') format('truetype'),
+         url('gotham-lightitalic-webfont.svg#gotham_lightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('gotham-bold-webfont.eot');
+    src: url('gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-bold-webfont.woff') format('woff'),
+         url('gotham-bold-webfont.ttf') format('truetype'),
+         url('gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header {
+	margin: 1em;
+}
+
+
+.row, .shopClosed, .shopOpen {
+	clear:both;
+}
+
+#accordion .shopClosed, .shopOpen {
+	width: 100%;
+	font-size: .8em;
+	font-family: 'gotham_lightitalic';
+	background-color: #B7DE9B;
+	text-align: center;
+
+}
+
+#accordion .shopClosed {
+	background-color: #B3B3B3;
+}
+
+
+
+.column1, .column3 {
+	width: 20%;
+	float: left;
+	/*border:1px solid red;*/
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+
+.column2 {
+	width: 60%;
+	float: left;
+}
+
+.callIcon {
+	display: inline-block;
+}
+
+.directionsIcon {
+	display: inline-block;
+}
+
+.column1 img, .column3 img {
+	position:relative;
+	width: 2em;
+	height: 2em;
+	vertical-align:middle;
+
+}
+
+.content p {
+	padding:15px;
+/*	margin-bottom:3px;
+*/	text-indent: 30px;
+	line-height: 23px;
+}
+
+.content { 
+	display:none;
+	/*border-bottom:1px solid #42210B;*/
+	text-align:left;
+	font-family: 'agenda-lightregular';
+	font-size:1.2em;
+}
+
+#theWaffleFamily {
+	font-family: 'akbarplain';
+	font-size: 1.2em;
+   -webkit-text-fill-color: #FFDD17; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #3B2314;
+}
+
+.locationHeading {
+	font-family: 'flagship_slabbold';
+	font-size: 1.4em;
+	text-align: center;
+	margin: .5em 0 .2em 0;
+	text-indent: 0;
+	letter-spacing: -.03em;
+}
+
+.locationHeading p, .locationBody p {
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-indent: 0;
+}
+
+.locationBody {
+	font-family: 'agenda-lightregular';
+	font-size: 1.05em;
+	text-align: center;
+
+}
+
+#greenCircle, #greenCircle2 {
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	background-color: #37B34A;
+	z-index: 12 !important;
+	display:inline-block;
+	border: 2px solid #fff;
+	vertical-align:middle;
+	margin-right: 14px;
+}
+
+#greenCircle2 {
+	visibility: hidden;
+}
+
+#accordion li {
+	position:relative;
+	overflow:hidden;
+}
+
+
+.head, #email { 
+	text-decoration:none; 
+	display:block;
+	background: #F5D76E;
+	padding:10px;
+	border-bottom: 3px solid #ffffff;
+	font-family: 'flagship_slabbold';
+	color: #F16522;
+	font-size: 1.6em;
+	text-align: center;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*#email { 
+	text-decoration:none; 
+	display:block;
+	background: #ffffff;
+	padding:10px;
+	border-bottom: 2px solid #fff;
+	font-family: 'flagship_slabbold';
+	color: #F16522;
+	text-align: center;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-size: 1.6em;
+	border: 0;
+}
+*/
+
+#email a{
+	color: #F16522;
+	text-decoration:none;
+	display: block;
+}
+
+#subAccordion .subHead {
+	text-align: center;
+	font-family: 'flagship_slabbold';
+	color: #674172;
+	font-size: 1em;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-bottom: 1px dotted #FFE592;
+	display: block;
+	padding: 6px 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*Savory etc...*/
+#subAccordion .menuSectionSubHeading {
+	font-family: 'flagship_slabbold';
+	font-size: 1.3em;
+	margin: 15px 0 5px 0;
+}
+
+/*.subContent{
+	padding:5px;
+}
+
+.subContent li {
+	font-family: 'agenda-lightregular';
+	font-size: 1.2em;
+	padding: 0;
+	margin-left: 20px;
+
+}*/
+
+/*#subAccordion .menuItem {
+	margin: 15px 0 0 0;
+	font-family: 'gotham_boldregular';
+	font-size: .8em;
+
+}
+*/
+
+/*ie Omelets are served with one Original Liège Waffle, a patch of organic greens and 
+sour cream for dipping*/
+/*#subAccordion .sectionDescription {
+	font-family: 'agenda-lightregular';
+	font-size: .8em;
+	line-height: 1.4em;
+}
+
+#subAccordion .disclaimer {
+	font-size: .7em;
+	font-family: 'gotham_lightitalic';
+	background-color: #FFE592;
+	text-align: center;
+	text-indent: 0;
+	padding: 0;
+	margin: 0;
+
+}*/
+
+/*#subAccordion .menuItemDescription {
+	font-family: 'agenda-lightregular';
+	font-size: .8em;
+	line-height: 1.4em;
+
+}*/
+
+/*#subAccordion .menuItemAddOn {
+	font-family: 'gotham_lightitalic';
+	font-size: .7em;
+	margin-top: 5px;
+}*/
+
+/*ie types of WORK espresso*/
+/*.itemSubList li {
+	font-family: 'agenda-lightregular';
+	font-size: .8em;
+	line-height: 1.4em;
+}*/
+
+#subAccordion .menuPDFLinks a {
+	font-family: 'agenda-lightregular';
+	padding: 5px 0;
+	color: #000;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.subContent{
+	display:none;
+}
+
+#siteLogo {
+	max-width: 90%;
+}
+
+footer {
+	background-color: #ffffff;
+	width: 100%;
+	height: .7em;
+
+}
+
+#socialBar {
+	padding: 10px;
+
+}
+
+.fb-like{
+    height: 20px;
+    overflow: hidden;
+}
+

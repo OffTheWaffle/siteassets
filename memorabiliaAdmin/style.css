@@ -1,0 +1,96 @@
+* {margin:0; padding:0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;}
+body {font:10px Verdana,Arial;background:}
+#wrapper {width:80%; margin:10px auto}
+.sortable {width:100%; border:1px solid #ccc; border-bottom:none}
+.sortable th {padding:4px 6px 6px; background:#FFE592; color:#3B2314; text-align:left;}
+.sortable td {padding:2px 4px 4px; background:#fff; border-bottom:1px solid #ccc}
+.sortable .head {background:#FFE592 url(images/sort.gif) 6px center no-repeat; cursor:pointer; padding-left:18px;color:#3B2314}
+.sortable .desc {background:#F16522 url(images/desc.gif) 6px center no-repeat; cursor:pointer; padding-left:18px;color:#fff}
+.sortable .asc {background:#F16522 url(images/asc.gif) 6px  center no-repeat; cursor:pointer; padding-left:18px;color:#fff}}
+.sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#fff}
+.sortable .even td {background:#f2f2f2}
+.sortable .odd td {background:#fff}
+
+#navBar {
+	width:100%;
+	padding:10px;
+	background:#fff;
+	box-shadow: 0px 1px 5px #888888;
+	font-size:2em;
+}
+
+#navBar img {
+	margin-right: 10px;
+}
+
+.radioButtons > input[type=radio]{
+  display:none;
+}
+input[type=radio] + img{
+  cursor:pointer;
+  opacity:0.6;
+}
+input[type=radio]:checked + img{
+  box-shadow: 0px 0px 5px #888888;
+  opacity:1;
+}
+
+.formContainer {
+	border:1px solid #ccc;
+	background:#f2f2f2;
+	margin-bottom:10px;
+}
+.formContainer form {
+	padding:10px;
+}
+h1 {
+	padding:10px;
+}
+
+.formContainer table tr:nth-of-type(even) td:first-of-type {
+	width:20%;
+
+	text-weight:bold;
+}
+
+.formContainer table tr:nth-of-type(even) td:last-of-type {
+	width:80%;
+	padding:10px 0 0 0;
+}
+
+.formContainer table tr:nth-of-type(odd) td:last-of-type {
+	color: #666666;
+	font-style:italic;
+		padding:10px 0 0 0;
+}
+
+input[type=submit]{
+  padding:5px 10px 5px 10px;
+  background: #FFE68C;
+  border: 1px solid #FFE68C;
+  	margin-top:10px;
+  width:150px;
+}
+
+input[type=submit]:hover {
+  background: #F16522;
+  cursor: pointer; cursor: hand;
+}
+
+#error {
+	width:25%;
+	border: 3px solid #B3002D;
+	background: #FF2626;
+	color:#fff;
+	margin:10px;
+	padding:5px;
+}
+
+a{
+	color: #3B2313;
+}
+a:hover{
+	color: #F16522;
+}
